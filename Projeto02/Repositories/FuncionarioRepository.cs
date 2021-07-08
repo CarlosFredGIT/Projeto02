@@ -15,7 +15,7 @@ namespace Projeto02.Repositories
 
             var streamWriter = new StreamWriter(path);
 
-            var json = JsonConvert.SerializeObject(funcionario);
+            var json = JsonConvert.SerializeObject(funcionario, Formatting.Indented);
 
             streamWriter.WriteLine(json);
 
